@@ -16,6 +16,7 @@ class UserCard extends StatelessWidget {
         left: 20.0,
         right:20.0,
       ),
+
       child: Text(
         details,
         textAlign: TextAlign.left,
@@ -34,6 +35,7 @@ class UserCard extends StatelessWidget {
           left: 20.0,
           top: 40.0
       ),
+
 
       child: Text(
         name,
@@ -76,7 +78,7 @@ class UserCard extends StatelessWidget {
     final icono = Container (
       margin: EdgeInsets.only(
           top: 20,
-          left: 60
+          left: 30
       ),
       height: 40.0,
       width: 40.0,
@@ -84,8 +86,8 @@ class UserCard extends StatelessWidget {
         onPressed: () {
           // Add your onPressed code here!
         },
-        child: const Icon(Icons.shopping_bag),
-        backgroundColor: Color.fromRGBO(101, 141, 229, 1),
+        child: const Icon(Icons.mail),
+        backgroundColor: Colors.orange,
       ),
     );
 

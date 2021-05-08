@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'home_trips.dart';
 import 'search_trips.dart';
 import 'profile_trips.dart';
-import 'cake_trips.dart';
+import 'contact_trips.dart';
 
 class UaoTrips extends StatefulWidget {
   @override
@@ -19,7 +19,7 @@ class _UaoTrips extends State<UaoTrips> {
     HomeTrips(),
     SearchTrips(),
     ProfileTrips(),
-    CakeTrips()
+    contactTrips(),
   ];
 
   void onTapTapped(int index){
@@ -66,9 +66,10 @@ class _UaoTrips extends State<UaoTrips> {
                 label: "Profile",
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.cake),
-                label: "Cakes",
+                  icon: Icon(Icons.contact_phone),
+              label: "contact"
               ),
+
             ]
         ),
       ),
